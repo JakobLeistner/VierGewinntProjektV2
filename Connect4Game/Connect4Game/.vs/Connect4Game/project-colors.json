@@ -5,7 +5,12 @@
       "ProjectGuid": "9b2cdb96-6b62-409f-a0b6-7718eddf2d72",
       "DisplayName": "Connect4Game",
       "ColorIndex": 0
+    },
+    "1f21c7e9-20d8-4944-aec0-c0219f6f9ba0": {
+      "ProjectGuid": "1f21c7e9-20d8-4944-aec0-c0219f6f9ba0",
+      "DisplayName": "Connect4Game.Tests",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

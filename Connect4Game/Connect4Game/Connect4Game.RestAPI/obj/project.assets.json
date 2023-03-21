@@ -193,23 +193,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\akaiser\\.nuget\\packages\\": {},
+    "C:\\Users\\chandra\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\akaiser\\source\\repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.RestAPI\\Connect4Game.RestAPI.csproj",
+      "projectUniqueName": "C:\\Users\\chandra\\Source\\Repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.RestAPI\\Connect4Game.RestAPI.csproj",
       "projectName": "Connect4Game.RestAPI",
-      "projectPath": "C:\\Users\\akaiser\\source\\repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.RestAPI\\Connect4Game.RestAPI.csproj",
-      "packagesPath": "C:\\Users\\akaiser\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\akaiser\\source\\repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.RestAPI\\obj\\",
+      "projectPath": "C:\\Users\\chandra\\Source\\Repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.RestAPI\\Connect4Game.RestAPI.csproj",
+      "packagesPath": "C:\\Users\\chandra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chandra\\Source\\Repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.RestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\akaiser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chandra\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -251,6 +251,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.13, 5.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -259,7 +277,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
