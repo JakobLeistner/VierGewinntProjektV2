@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "74XYZjk1ghBjMtQniQlvzt2sqwTzFzGQrqgMLsCubwVfbtBJKaaVO/KJiwsN83Xgl40Sy+L32i2GTXRnIkoxtQ==",
+  "dgSpecHash": "/3yogaD1I/rZua+NM1tdw67uUARWt1CNzLqGHH9quzV+KA8doI6ZjdYyzAtXJzEPoDzDI8Tv1to7RHpRTRi1Gw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\akaiser\\source\\repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.BusinessLogic\\Connect4Game.BusinessLogic.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\spindler\\source\\repos\\WorkshopVierGewinnt\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.BusinessLogic\\Connect4Game.BusinessLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\spindler\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\spindler\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\spindler\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

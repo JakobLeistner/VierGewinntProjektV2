@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9b2cdb96-6b62-409f-a0b6-7718eddf2d72": {
+      "ProjectGuid": "9b2cdb96-6b62-409f-a0b6-7718eddf2d72",
+      "DisplayName": "Connect4Game",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
