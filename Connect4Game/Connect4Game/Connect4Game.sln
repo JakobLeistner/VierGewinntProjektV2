@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32014.148
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connect4Game", "Connect4Game.csproj", "{9B2CDB96-6B62-409F-A0B6-7718EDDF2D72}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connect4Game.BusinessLogic", "Connect4Game.BusinessLogic\Connect4Game.BusinessLogic.csproj", "{A85149DA-8C0C-41CF-AA3B-3C438A9FA6B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connect4Game.RestAPI", "Connect4Game.RestAPI\Connect4Game.RestAPI.csproj", "{C00BD0AE-EC1F-4AF5-AEB3-07E8CF0BFB13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect4Game.RestAPI", "..\Connect4Game.RestAPI\Connect4Game.RestAPI.csproj", "{391B197E-7B58-406A-930D-A9A16F56AD05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect4Game.BusinessLogic", "Connect4Game.BusinessLogic\Connect4Game.BusinessLogic.csproj", "{0081C034-444D-405A-9610-E586CC3774A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{9B2CDB96-6B62-409F-A0B6-7718EDDF2D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B2CDB96-6B62-409F-A0B6-7718EDDF2D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B2CDB96-6B62-409F-A0B6-7718EDDF2D72}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A85149DA-8C0C-41CF-AA3B-3C438A9FA6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A85149DA-8C0C-41CF-AA3B-3C438A9FA6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A85149DA-8C0C-41CF-AA3B-3C438A9FA6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A85149DA-8C0C-41CF-AA3B-3C438A9FA6B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{391B197E-7B58-406A-930D-A9A16F56AD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{391B197E-7B58-406A-930D-A9A16F56AD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{391B197E-7B58-406A-930D-A9A16F56AD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{391B197E-7B58-406A-930D-A9A16F56AD05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C00BD0AE-EC1F-4AF5-AEB3-07E8CF0BFB13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C00BD0AE-EC1F-4AF5-AEB3-07E8CF0BFB13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C00BD0AE-EC1F-4AF5-AEB3-07E8CF0BFB13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C00BD0AE-EC1F-4AF5-AEB3-07E8CF0BFB13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0081C034-444D-405A-9610-E586CC3774A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0081C034-444D-405A-9610-E586CC3774A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0081C034-444D-405A-9610-E586CC3774A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0081C034-444D-405A-9610-E586CC3774A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
