@@ -20,7 +20,11 @@ namespace Connect4Game.BusinessLogic
 
         public void ClearBoard(int col, int row)
         {
-            throw new NotImplementedException();
+            Col = 6;
+            Row = 7;
+            Squares = new int[col][];
+
+
         }
 
         public void MakeMove(IPlayer p, int col)
