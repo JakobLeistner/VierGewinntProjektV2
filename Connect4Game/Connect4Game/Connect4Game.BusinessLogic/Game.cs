@@ -1,4 +1,5 @@
 ﻿using System;
+using Connect4Game.BusinessLogic.Contracts.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,21 +7,25 @@ using System.Threading.Tasks;
 
 namespace Connect4Game.BusinessLogic
 {
-    public class Game
+    public class Game : IGame
     {
-        string GameID;
-        Player Player1;
-        Player Player2;
-        Board Board;
-        Player CurrentPlayer;
-        EventHandler OnGameStarted;
-        EventHandler OnMoveMade;
-        EventHandler OnGameEnded;
+        public string GameID { get; set; }
+        public IPlayer Player1 { get; set; }
+        public IPlayer Player2 { get; set; }
+        public IBoard Board { get; set; }
+        public IPlayer CurrentPlayer { get; set; }
+        public EventHandler OnGameStarted { get; set; }
+        public EventHandler OnMoveMade { get; set; }
+        public EventHandler OnGameEnded { get; set; }
+
+        public Game(string gameID, string playerID)
+        {
+
+        }
 
         public bool MakeMove(int col)
         {
             throw new NotImplementedException();
-            
         }
 
         public void TogglePlayer()
@@ -38,7 +43,7 @@ namespace Connect4Game.BusinessLogic
             throw new NotImplementedException();
         }
 
-        public Player GetWinner(string game_ID)
+        public Player GetWinner(string gameID)
         {
             throw new NotImplementedException();
         }
