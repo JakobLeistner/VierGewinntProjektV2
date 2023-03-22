@@ -8,6 +8,7 @@ namespace Connect4Game.BusinessLogic
         public Class1()
         {
             test = 1;
+            test = 3;
         }
     }
 }
