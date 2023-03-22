@@ -11,9 +11,6 @@ namespace Connect4Game.BusinessLogic.Contracts.Interfaces
         int PlayerID { get; }
         string color { get; }
 
-        string GetName()
-        {
-            return "";
-        }
+        string GetName();
     }
 }

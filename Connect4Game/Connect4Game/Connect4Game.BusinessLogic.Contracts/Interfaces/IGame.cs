@@ -19,24 +19,12 @@ namespace Connect4Game.BusinessLogic.Contracts.Interfaces
 
         bool MakeMove(int col);
 
-        void TogglePlayer()
-        {
-            throw new NotImplementedException();
-        }
+        void TogglePlayer();
 
-        bool IsOver(string gameID)
-        {
-            throw new NotImplementedException();
-        }
+        bool IsOver(string gameID);
 
-        bool IsDraw(string gameID)
-        {
-            throw new NotImplementedException();
-        }
+        bool IsDraw(string gameID);
 
-        IPlayer GetWinner(string gameID)
-        {
-            throw new NotImplementedException();
-        }
+        IPlayer GetWinner(string gameID);
     }
 }

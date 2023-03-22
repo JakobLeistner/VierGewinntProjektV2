@@ -43,7 +43,7 @@ namespace Connect4Game.BusinessLogic
             throw new NotImplementedException();
         }
 
-        public Player GetWinner(string gameID)
+        public IPlayer GetWinner(string gameID)
         {
             throw new NotImplementedException();
         }

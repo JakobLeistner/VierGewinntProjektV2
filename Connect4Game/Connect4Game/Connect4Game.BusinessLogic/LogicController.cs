@@ -18,12 +18,12 @@ namespace Connect4Game.BusinessLogic
 
         }
 
-        public void JoinQueue(Player playerID)
+        public void JoinQueue(IPlayer playerID)
         {
             throw new NotImplementedException();
         }
 
-        public Game StartGame(Player playerID1, Player playerID2)
+        public IGame StartGame(IPlayer playerID1, IPlayer playerID2)
         {
             throw new NotImplementedException();
         }
@@ -33,12 +33,12 @@ namespace Connect4Game.BusinessLogic
             throw new NotImplementedException();
         }
 
-        public Game GetGameFromID(string gameID)
+        public IGame GetGameFromID(string gameID)
         {
             throw new NotImplementedException();
         }
 
-        public Player GetPlayerFromID(string playerID)
+        public IPlayer GetPlayerFromID(string playerID)
         {
             throw new NotImplementedException();
         }

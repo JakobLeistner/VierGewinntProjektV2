@@ -13,24 +13,12 @@ namespace Connect4Game.BusinessLogic.Contracts.Interfaces
         IPlayer[] PlayerList { get; }
         IPlayer[] Queue { get; }
 
-        void JoinQueue(IPlayer playerID)
-        {
-            throw new NotImplementedException();
-        }
+        void JoinQueue(IPlayer playerID);
 
-        IGame StartGame(IPlayer playerID1, IPlayer playerID2)
-        {
-            throw new NotImplementedException();
-        }
+        IGame StartGame(IPlayer playerID1, IPlayer playerID2);
 
-        void EndGame(string gameID)
-        {
-            throw new NotImplementedException();
-        }
+        void EndGame(string gameID);
 
-        IGame GetGameFromID(string gameID)
-        {
-            throw new NotImplementedException();
-        }
+        IGame GetGameFromID(string gameID);
     }
 }
