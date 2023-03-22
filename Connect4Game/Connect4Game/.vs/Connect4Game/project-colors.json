@@ -5,7 +5,27 @@
       "ProjectGuid": "9b2cdb96-6b62-409f-a0b6-7718eddf2d72",
       "DisplayName": "Connect4Game",
       "ColorIndex": 0
+    },
+    "d2e3423a-ae57-44d2-b8c5-dce359c5ab07": {
+      "ProjectGuid": "d2e3423a-ae57-44d2-b8c5-dce359c5ab07",
+      "DisplayName": "Connect4Game.BusinessLogic.Contracts",
+      "ColorIndex": 1
+    },
+    "751fd4bd-5f98-4e8d-8575-be7cd7cf73b7": {
+      "ProjectGuid": "751fd4bd-5f98-4e8d-8575-be7cd7cf73b7",
+      "DisplayName": "Connect4Game.BusinessLogic.Contracts",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "ee08efb2-21c8-451b-990e-3d43db7b57d3": {
+      "ProjectGuid": "ee08efb2-21c8-451b-990e-3d43db7b57d3",
+      "DisplayName": "Connect4Game.RestAPI.Contracts",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }
