@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connect4Game.RestAPI", "Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connect4Game.BusinessLogic", "Connect4Game.BusinessLogic\Connect4Game.BusinessLogic.csproj", "{0081C034-444D-405A-9610-E586CC3774A8}"
 EndProject
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connect4Game.BusinessLogic.Contracts", "Connect4Game.BusinessLogic.Contracts\Connect4Game.BusinessLogic.Contracts.csproj", "{751FD4BD-5F98-4E8D-8575-BE7CD7CF73B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect4Game.RestAPI.Contracts", "Connect4Game.RestAPI.Contracts\Connect4Game.RestAPI.Contracts.csproj", "{EE08EFB2-21C8-451B-990E-3D43DB7B57D3}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect4Game.Tests", "Connect4Game.Tests\Connect4Game.Tests.csproj", "{1F21C7E9-20D8-4944-AEC0-C0219F6F9BA0}"
+>>>>>>> 9d06b3b46def102a34fdcad5815c6fd045b9853b
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,7 @@ Global
 		{0081C034-444D-405A-9610-E586CC3774A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0081C034-444D-405A-9610-E586CC3774A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0081C034-444D-405A-9610-E586CC3774A8}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{751FD4BD-5F98-4E8D-8575-BE7CD7CF73B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{751FD4BD-5F98-4E8D-8575-BE7CD7CF73B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{751FD4BD-5F98-4E8D-8575-BE7CD7CF73B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +44,12 @@ Global
 		{EE08EFB2-21C8-451B-990E-3D43DB7B57D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE08EFB2-21C8-451B-990E-3D43DB7B57D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE08EFB2-21C8-451B-990E-3D43DB7B57D3}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{1F21C7E9-20D8-4944-AEC0-C0219F6F9BA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F21C7E9-20D8-4944-AEC0-C0219F6F9BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F21C7E9-20D8-4944-AEC0-C0219F6F9BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F21C7E9-20D8-4944-AEC0-C0219F6F9BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 9d06b3b46def102a34fdcad5815c6fd045b9853b
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
