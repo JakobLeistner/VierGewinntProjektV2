@@ -9,7 +9,7 @@ namespace Connect4Game.BusinessLogic
 {
     public class Player : IPlayer
     {
-        public int PlayerID { get; set; }
+        public string PlayerID { get; set; }
         private int name { get; set; }
         public string color { get; set; }
 

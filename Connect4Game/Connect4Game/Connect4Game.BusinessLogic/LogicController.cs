@@ -9,9 +9,9 @@ namespace Connect4Game.BusinessLogic
 {
     public class LogicController : ILogicController
     {
-        public IGame[] GameList { get; set; }
-        public IPlayer[] PlayerList { get; set; }
-        public IPlayer[] Queue { get; set; }
+        public List<IGame> GameList { get; set; }
+        public List<IPlayer> PlayerList { get; set; }
+        public List<IPlayer> Queue { get; set; }
 
         public LogicController()
         {
