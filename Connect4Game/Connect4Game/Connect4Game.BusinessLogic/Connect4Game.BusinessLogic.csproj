@@ -4,4 +4,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Connect4Game.BusinessLogic.Contracts\Connect4Game.BusinessLogic.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>
