@@ -1,3 +1,4 @@
+using Connect4Game.BusinessLogic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Connect4Game.Tests
@@ -14,7 +15,7 @@ namespace Connect4Game.Tests
         Player Player1;
         Player Player2;
         Player CurrentPlayer;
-        player Winner;
+        Player Winner;
 
         Board Board;
 
@@ -22,11 +23,11 @@ namespace Connect4Game.Tests
         public void Init()
         {
             // Game
-            Game = new Game(""); // GameID
+            Game = new Game("", ""); // GameID
             Player1 = new Player("", "", ""); // PlayerID, name, Color
             Player2 = new Player("", "", "");
             CurrentPlayer = new Player("", "", "");
-            Winner = new player("", "", "");
+            Winner = new Player("", "", "");
         }
 
         // Player
@@ -43,13 +44,13 @@ namespace Connect4Game.Tests
         [DataRow(-3)]
         public void MakeMove_WhenColumnIsOutOfRange_ShouldThrowArgumentOutOfRange(Player p, int col)
         {
-            Assert.ThrowsException<ArgumentOutOfRangeException>(() => Game.MakeMove(Player p, col));
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => Game.MakeMove(p, col));
         }
 
         [TestMethod]
         public void TogglePlayer_PlayerIsChanging()
         {
-            CurrentPlayer.TogglePlayer();
+            Game.TogglePlayer();
         }
 
         [TestMethod]
@@ -67,7 +68,7 @@ namespace Connect4Game.Tests
         [TestMethod]
         public void GetWinner_WhenPlayer1Wins_ShouldReturnWinner(string gameID)
         {
-            Assert.AreSame(Winner, GetWinner(gameID));
+            Assert.AreSame(Winner, Game.GetWinner(gameID));
         }
 
     }
