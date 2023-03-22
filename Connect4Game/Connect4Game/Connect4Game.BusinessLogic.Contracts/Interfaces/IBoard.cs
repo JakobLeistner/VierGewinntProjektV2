@@ -14,6 +14,6 @@ namespace Connect4Game.BusinessLogic.Contracts.Interfaces
 
         void ClearBoard(int col, int row);
 
-        void MakeMove(int col);
+        void MakeMove(IPlayer p, int col);
     }
 }

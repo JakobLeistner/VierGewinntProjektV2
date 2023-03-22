@@ -17,7 +17,7 @@ namespace Connect4Game.BusinessLogic.Contracts.Interfaces
         EventHandler OnMoveMade { get; set; }
         EventHandler OnGameEnded { get; set; }
 
-        bool MakeMove(int col);
+        bool MakeMove(IPlayer p, int col);
 
         void TogglePlayer();
 

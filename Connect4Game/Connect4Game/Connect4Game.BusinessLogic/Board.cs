@@ -9,6 +9,7 @@ namespace Connect4Game.BusinessLogic
 {
     public class Board : IBoard
     {
+        //
         public int Col { get; set; }
         public int Row { get; set; }
         public int[][] Squares { get; set; }
@@ -20,10 +21,20 @@ namespace Connect4Game.BusinessLogic
 
         public void ClearBoard(int col, int row)
         {
-            throw new NotImplementedException();
+            col = 7;
+            row = 6;
+
+            for (int i = 0;i < col; i++)
+            {
+                Squares[i] = new int[col];
+                for (int j = 0; j < row; j++)
+                {
+                    Squares = new int[row][];
+                }
+            }
         }
 
-        public void MakeMove(int col)
+        public void MakeMove(IPlayer p, int col)
         {
             throw new NotImplementedException();
         }

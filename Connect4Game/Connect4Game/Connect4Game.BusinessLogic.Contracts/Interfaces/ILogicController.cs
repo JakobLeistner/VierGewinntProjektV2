@@ -9,9 +9,9 @@ namespace Connect4Game.BusinessLogic.Contracts.Interfaces
 {
     public interface ILogicController
     {
-        IGame[] GameList { get; }
-        IPlayer[] PlayerList { get; }
-        IPlayer[] Queue { get; }
+        List<IGame> GameList { get; }
+        List<IPlayer> PlayerList { get; }
+        List<IPlayer> Queue { get; }
 
         void JoinQueue(IPlayer playerID);
 

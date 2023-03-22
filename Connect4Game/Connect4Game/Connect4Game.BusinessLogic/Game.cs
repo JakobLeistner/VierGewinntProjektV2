@@ -23,7 +23,7 @@ namespace Connect4Game.BusinessLogic
 
         }
 
-        public bool MakeMove(int col)
+        public bool MakeMove(IPlayer p, int col)
         {
             throw new NotImplementedException();
         }
