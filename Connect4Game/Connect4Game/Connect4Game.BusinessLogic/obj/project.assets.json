@@ -8,23 +8,23 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\spindler\\.nuget\\packages\\": {},
+    "C:\\Users\\chandra\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\spindler\\source\\repos\\WorkshopVierGewinnt\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.BusinessLogic\\Connect4Game.BusinessLogic.csproj",
+      "projectUniqueName": "C:\\Users\\chandra\\source\\repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.BusinessLogic\\Connect4Game.BusinessLogic.csproj",
       "projectName": "Connect4Game.BusinessLogic",
-      "projectPath": "C:\\Users\\spindler\\source\\repos\\WorkshopVierGewinnt\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.BusinessLogic\\Connect4Game.BusinessLogic.csproj",
-      "packagesPath": "C:\\Users\\spindler\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\spindler\\source\\repos\\WorkshopVierGewinnt\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.BusinessLogic\\obj\\",
+      "projectPath": "C:\\Users\\chandra\\source\\repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.BusinessLogic\\Connect4Game.BusinessLogic.csproj",
+      "packagesPath": "C:\\Users\\chandra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chandra\\source\\repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\spindler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chandra\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -82,13 +82,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\spindler\\source\\repos\\WorkshopVierGewinnt\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.BusinessLogic\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

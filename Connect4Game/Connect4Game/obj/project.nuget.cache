@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "z2t5UEq67wW/wzv6uW6nHo/oo0uEdYMW0x+TSVAkYWcpk3rBOdQ5AL/GtR1h5km4LLCHEots6rhIxfYPv7RXlA==",
+  "dgSpecHash": "ysBtlL9ZLZZTYvvAEcd4VuZpz/Ppm6yVgzcYrpuXjkbmfYm98pbnlcdK/iKHBoTyHPwP69YLX4QMod3+qydB5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\spindler\\source\\repos\\WorkshopVierGewinnt\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\spindler\\source\\repos\\WorkshopVierGewinnt\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "projectFilePath": "C:\\Users\\chandra\\source\\repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chandra\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\chandra\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\chandra\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
 }

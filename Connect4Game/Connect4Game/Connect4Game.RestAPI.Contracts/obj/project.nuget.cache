@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2wNUMywtZfCPAQGQrK8ETm95o/5gURIkfdSbB8KKNrg85fi7M7NM55N3pRLepqAdzR9Yt6vJLM+SqRPQZOeuwg==",
+  "dgSpecHash": "r5t2Rx721/123F1cFhFjrz5NQ8fG3TIOPNkYxM2OdfdH6s8zjamclGodFlulEJMmUChRU6yf0WA92CXwMvd/nw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\spindler\\source\\repos\\WorkshopVierGewinnt\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.RestAPI.Contracts\\Connect4Game.RestAPI.Contracts.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\chandra\\source\\repos\\VierGewinntProjektV2\\Connect4Game\\Connect4Game\\Connect4Game.RestAPI.Contracts\\Connect4Game.RestAPI.Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chandra\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\chandra\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\chandra\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
