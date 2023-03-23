@@ -18,6 +18,7 @@ namespace Connect4Game.RestAPI
         //public EventHandler OnGameEnded;
         //public EventHandler OnMoveMade;
         //public EventHandler OnQueueChanged;
+        //hallo ich in eintest
 
         public RTPHub()
         {
@@ -38,13 +39,13 @@ namespace Connect4Game.RestAPI
         }
 
         [HubMethodName("OnMoveMade")]
-        public async Task OnMoveMade(string gameID)
+        public async Task OnMoveMade(string gameID, Player Mover)
         {
-            await SendMessage(gameID, "MoveMade", null);
+            await SendMessage(gameID, "MoveMade", Mover);
         }
 
         [HubMethodName("OnQueueChanged")]
-        public async Task OnQueueChanged(string gameID)
+        public async Task<List<IPlayer>> OnQueueChanged(string gameID)
         {
             await SendMessage(gameID, "QueueChanged", null);
         }
