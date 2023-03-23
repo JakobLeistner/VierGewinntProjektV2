@@ -8,12 +8,12 @@ namespace Connect4Game.BusinessLogic.Contracts.Interfaces
 {
     public interface IBoard
     {
-        int Col { get;}
+        int Col { get; }
         int Row { get; }
-        int[][] Squares { get; }
+        int[][] Squares { get; set; }
 
-        void ClearBoard(int col, int row);
+        void InitBoard(int col, int row);
 
-        void MakeMove(IPlayer p, int col);
+        void MakeMove(IPlayer p, int col, int playerIndex);
     }
 }
