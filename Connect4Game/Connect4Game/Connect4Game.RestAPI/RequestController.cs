@@ -15,9 +15,13 @@ namespace Connect4Game.RestAPI
         {
         }
 
-        public Player SetName(string name) //RegisterPlayer würde mir mehr gefallen
+        public Player RegisterPlayer(string name, string color) //RegisterPlayer würde mir mehr gefallen
         {
-            Player p = new Player(name);
+            //neue playerID generieren
+            Guid uuid = Guid.NewGuid();
+            string newPlayerID = uuid.ToString();
+
+            Player p = new Player(newPlayerID, name, color);
             logic.PlayerList.Add(p);
             return p;
         }
@@ -25,15 +29,14 @@ namespace Connect4Game.RestAPI
         {
             //neue gameID generieren
             Guid uuid = Guid.NewGuid();
-            string gameID = uuid.ToString();
-            Game g = new Game(gameID, playerID);
+            string newGameID = uuid.ToString();
+            Game g = new Game(newGameID, playerID);
             logic.GameList.Add(g);
             return g;
         }
         public void JoinGame(string playerID, string gameID)
         {
             logic.GetGameFromID(gameID).Player2 = logic.GetPlayerFromID(playerID);
-            //trigger event OnGameStarted?
 
         }
         public void LeaveGame(string playerID)
@@ -49,7 +52,6 @@ namespace Connect4Game.RestAPI
         }
         public void MakeMove(string playerID, int col, string gameID)
         {
-            //trigger event OnMoveMade?
 
         }
         public Game GetStatus(string gameID)
