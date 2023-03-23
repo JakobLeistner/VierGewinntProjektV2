@@ -15,9 +15,13 @@ namespace Connect4Game.RestAPI
         {
         }
 
-        public Player SetName(string name) //RegisterPlayer würde mir mehr gefallen
+        public Player RegisterPlayer(string name, string color) //RegisterPlayer würde mir mehr gefallen
         {
-            Player p = new Player(name);
+            //neue playerID generieren
+            Guid uuid = Guid.NewGuid();
+            string newPlayerID = uuid.ToString();
+
+            Player p = new Player(newPlayerID, name, color);
             logic.PlayerList.Add(p);
             return p;
         }
@@ -25,23 +29,25 @@ namespace Connect4Game.RestAPI
         {
             //neue gameID generieren
             Guid uuid = Guid.NewGuid();
-            string gameID = uuid.ToString();
-            Game g = new Game(gameID, playerID);
+            string newGameID = uuid.ToString();
+            Game g = new Game(newGameID, playerID);
             logic.GameList.Add(g);
             return g;
         }
         public void JoinGame(string playerID, string gameID)
         {
-            logic.GetGameFromID(gameID).Player2 = logic.GetPlayerFromID(playerID);
-            //trigger event OnGameStarted?
+            logic.GetGameFromID(gameID).Player2 = logic.GetPlayerFromID(playerID); //Player2 muss uach set sein in der logic oder? // ic hmuss es hier doch ändern
 
         }
+        //FontEnd triggers
         public void LeaveGame(string playerID)
         {
+            //Player leaves prematurely, this is not the natural way that a game ends.
+            //The natural way, meaning somebody won or the game resulted in a draw, would trigger the "OnGameEnded" Event
             //remove the game which the player was playing
-            foreach (Game g in logic.GameList)
+            foreach (IGame g in logic.GameList)
             {
-                if ((g.Player1.playerID == playerID) || (g.Player2.playerID == playerID))
+                if ((g.Player1.PlayerID == playerID) || (g.Player2.PlayerID == playerID))
                 {
                     logic.GameList.Remove(g);
                 }
@@ -49,14 +55,15 @@ namespace Connect4Game.RestAPI
         }
         public void MakeMove(string playerID, int col, string gameID)
         {
-            //trigger event OnMoveMade?
-
+            logic.MakeMoveInGame(gameID, playerID, col);
         }
-        public Game GetStatus(string gameID)
+        
+        //FrontEnd request and gets Status Update
+        public IGame GetStatus(string gameID)
         {
-            return logic.GetGameFromID(gameID);
+            return logic.GetGameFromID(gameID);  //Interface oder nicht - das ist hier die Frage
         }
-        public IPlayer[] GetQueue()
+        public List<IPlayer> GetQueue()
         {
             return logic.Queue;
         }
