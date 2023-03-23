@@ -8,5 +8,11 @@ namespace Connect4Game.RestAPI
     public class ConnectionService
     {
         public Dictionary<string, string> PlayerIDToConnectionID;
+
+        //Wenn eine neue Person die Seite lädt
+        public ConnectionService()
+        {
+            PlayerIDToConnectionID = new Dictionary<string, string>();
+        }
     }
 }

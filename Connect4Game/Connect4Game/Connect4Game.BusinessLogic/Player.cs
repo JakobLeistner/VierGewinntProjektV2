@@ -10,17 +10,19 @@ namespace Connect4Game.BusinessLogic
     public class Player : IPlayer
     {
         public string PlayerID { get; set; }
-        private int name { get; set; }
-        public string color { get; set; }
+        private string name { get; set; }
+        public string Color { get; set; }
 
         public Player(string playerID, string name, string color)
         {
-
+            this.PlayerID = playerID;
+            this.name = name;
+            this.Color = color;
         }
 
         public string GetName()
         {
-            return"";
+            return name;
         }
     }
 }

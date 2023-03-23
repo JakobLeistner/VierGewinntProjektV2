@@ -9,7 +9,6 @@ namespace Connect4Game.BusinessLogic
 {
     public class LogicController : ILogicController
     {
-        //
         public List<IGame> GameList { get; set; }
         public List<IPlayer> PlayerList { get; set; }
         public List<IPlayer> Queue { get; set; }
@@ -32,6 +31,12 @@ namespace Connect4Game.BusinessLogic
         public void EndGame(string gameID)
         {
             throw new NotImplementedException();
+        }
+
+        public void MakeMoveInGame(string gameID, string playerID, int col)
+        {
+            IPlayer p = GetPlayerFromID(playerID);
+            Game.MakeMove(p,col);
         }
 
         public IGame GetGameFromID(string gameID)
