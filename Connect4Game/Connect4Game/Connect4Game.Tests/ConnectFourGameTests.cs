@@ -29,14 +29,14 @@ namespace Connect4Game.Tests
         [DataRow(-3)]
         public void MakeMove_WhenColumnIsOutOfRange_ShouldThrowArgumentOutOfRange(int col)
         {
-            Player player = Game.Player1;
+            Player player = (Player) Game.Player1;
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => Game.MakeMove(player, col));
         }
 
         [TestMethod]
         public void MakeMove_WhenAColumnIsFull_ShouldThrowInvalidOperations()
         {
-            Player player = Game.Player1;
+            Player player = (Player) Game.Player1;
             int col = 1; // depends on Array Column's Number
 
             Game.Board.Squares = new int[][]
@@ -51,12 +51,7 @@ namespace Connect4Game.Tests
             
             Assert.ThrowsException<InvalidOperationException>(() => Game.MakeMove(player, col));
         }
-        /// <summary>
-        /// --MakeMove-
-        /// * Steine im Board setzen und schauen ob die richtig gelegt sind (Vergleich von 2 Boards -> AreEqual) -- in jeder Spalte mit DataRow ausprobieren
-        /// * Ob CurrentPlayer, der den Move macht -> Prüfen -> falsch? Exception
-        /// * linkste und rechste Spalte
-        /// </summary>
+
         [TestMethod]
         [DataRow(0)] // depends on Array Column' Number
         [DataRow(1)]
@@ -68,7 +63,7 @@ namespace Connect4Game.Tests
         public void MakeMove_WhenTokensDroppedInColumns(int col)
         {
             Board newBoard = new Board(7, 6);
-            Player player = Game.Player2;
+            Player player = (Player) Game.Player2;
 
             Game.Board.Squares = new int[][]
             {
@@ -90,18 +85,18 @@ namespace Connect4Game.Tests
               new int[]{0,0,0,0,0,0,0},
             };
 
-            newBoard.Squares[5]][col] = 2;
+            newBoard.Squares[5][col] = 2;
 
             Game.MakeMove(player, col);
             Assert.AreEqual(newBoard.Squares, Game.Board.Squares);
         }
 
         [TestMethod]
-        public void MakeMove_WhenItIsNotCurrentPlayerWhoMakesTheMove_ShouldReturnFalse()
+        public void MakeMove_WhenItIsNotCurrentPlayerWhoMakesTheMove_ShouldReturnFalse() // Exceptions vom Lukas
         {
-            Game.MakeMove(Game.Player1, 6);
+            Game.CurrentPlayer = Game.Player1;
 
-            Assert.AreSame(Game.CurrentPlayer, Game.Player1);
+            Assert.ThrowsException<ArgumentException>(() => Game.MakeMove(Game.Player2, 6));
         }
 
         [TestMethod]
@@ -157,7 +152,7 @@ namespace Connect4Game.Tests
 
         // IsOver(): bool
         [TestMethod]
-        public void IsOver_WhenPlayer2Wins_ShouldReturnTrue() // mit dem Board 2er setzen
+        public void IsOver_WhenPlayer2Wins_ShouldReturnTrue()
         {
             Game.Board.Squares = new int[][] {
               new int[]{0,0,0,2,0,0,0},
@@ -172,7 +167,7 @@ namespace Connect4Game.Tests
         }
 
         [TestMethod]
-        public void IsOver_WhenPlayer1Wins_ShouldReturnTrue() // mit dem Board 1er setzen
+        public void IsOver_WhenPlayer1Wins_ShouldReturnTrue()
         {
             Game.Board.Squares = new int[][] {
               new int[]{0,0,0,2,0,0,0},
@@ -232,8 +227,8 @@ namespace Connect4Game.Tests
               new int[]{1,1,2,2,1,2,1},
               new int[]{1,2,1,2,2,1,1},
             };
-
-            Game.MakeMove(Game.Player2, 6);
+            Game.CurrentPlayer = Game.Player2;
+            Game.MakeMove(Game.CurrentPlayer, 6);
             Assert.IsFalse(Game.IsDraw());
         }
 
