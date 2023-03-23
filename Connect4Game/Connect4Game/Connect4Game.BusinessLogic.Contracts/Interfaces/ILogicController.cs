@@ -17,6 +17,8 @@ namespace Connect4Game.BusinessLogic.Contracts.Interfaces
 
         IGame StartGame(IPlayer playerID1, IPlayer playerID2);
 
+        public void MakeMoveInGame(string gameID, string playerID, int col);
+
         void EndGame(string gameID);
 
         IGame GetGameFromID(string gameID);

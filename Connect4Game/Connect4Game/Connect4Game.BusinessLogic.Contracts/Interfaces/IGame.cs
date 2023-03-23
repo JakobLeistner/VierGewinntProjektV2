@@ -10,7 +10,7 @@ namespace Connect4Game.BusinessLogic.Contracts.Interfaces
     {
         string GameID { get; }
         IPlayer Player1 { get; }
-        IPlayer Player2 { get; }
+        IPlayer Player2 { get; set; }
         IBoard Board { get;}
         IPlayer CurrentPlayer { get; }
         EventHandler OnGameStarted { get; set; }
@@ -21,10 +21,10 @@ namespace Connect4Game.BusinessLogic.Contracts.Interfaces
 
         void TogglePlayer();
 
-        bool IsOver(string gameID);
+        bool IsOver();
 
-        bool IsDraw(string gameID);
+        bool IsDraw();
 
-        IPlayer GetWinner(string gameID);
+        IPlayer GetWinner();
     }
 }
