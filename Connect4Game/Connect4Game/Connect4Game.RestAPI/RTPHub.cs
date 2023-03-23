@@ -45,9 +45,9 @@ namespace Connect4Game.RestAPI
         }
 
         [HubMethodName("OnQueueChanged")]
-        public async Task<List<IPlayer>> OnQueueChanged(string gameID)
+        public async Task OnQueueChanged(string gameID)
         {
-            await SendMessage(gameID, "QueueChanged", null);
+            await BroadcastMessage("QueueChanged");
         }
 
 
@@ -58,6 +58,11 @@ namespace Connect4Game.RestAPI
 
             string Player2ConnectionID = connection.PlayerIDToConnectionID[logic.GetGameFromID(gameID).Player2.PlayerID];
             await Clients.Client(Player2ConnectionID).SendAsync(message, data);
+        }
+
+        private async Task BroadcastMessage(string message) 
+        {
+            await Clients.All.SendAsync(message); 
         }
     }
 }
