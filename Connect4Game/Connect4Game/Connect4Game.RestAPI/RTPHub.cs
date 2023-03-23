@@ -24,12 +24,31 @@ namespace Connect4Game.RestAPI
 
         }
         //Hub wartet und hört zu, ob die events getriggert werden
+        //gameID kommt aus Logik, denn dort wurde das event invoked 
         [HubMethodName("OnGameStarted")]
-        //gameID kommt aus logik, denn dort wurde das event invoked 
-        public async Task OnGameStarted(Player winner, string gameID) 
+        public async Task OnGameStarted(string gameID)
         { 
-            await SendMessage(gameID, "GameFinished", winner);
+            await SendMessage(gameID, "GameStarted", null);
         }
+
+        [HubMethodName("OnGameEnded")]
+        public async Task OnGameEnded(string gameID)
+        {
+            await SendMessage(gameID, "GameEnded", null);
+        }
+
+        [HubMethodName("OnMoveMade")]
+        public async Task OnMoveMade(string gameID)
+        {
+            await SendMessage(gameID, "MoveMade", null);
+        }
+
+        [HubMethodName("OnQueueChanged")]
+        public async Task OnQueueChanged(string gameID)
+        {
+            await SendMessage(gameID, "QueueChanged", null);
+        }
+
 
         private async Task SendMessage(string gameID, string message, object data) //sends messages to both players from one game
         {
