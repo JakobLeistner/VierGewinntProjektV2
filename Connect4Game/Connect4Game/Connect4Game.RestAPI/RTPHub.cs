@@ -14,17 +14,9 @@ namespace Connect4Game.RestAPI
         private ConnectionService connection;
         private LogicController logic;
 
-        //public EventHandler OnGameStarted;
-        //public EventHandler OnGameEnded;
-        //public EventHandler OnMoveMade;
-        //public EventHandler OnQueueChanged;
-        //hallo ich in eintest
+        public RTPHub(){}
+        //Hub wartet und hört auf events
 
-        public RTPHub()
-        {
-
-        }
-        //Hub wartet und hört zu, ob die events getriggert werden
         //gameID kommt aus Logik, denn dort wurde das event invoked 
         [HubMethodName("OnGameStarted")]
         public async Task OnGameStarted(string gameID)
@@ -45,13 +37,13 @@ namespace Connect4Game.RestAPI
         }
 
         [HubMethodName("OnQueueChanged")]
-        public async Task OnQueueChanged(string gameID)
+        public async Task OnQueueChanged()
         {
             await BroadcastMessage("QueueChanged");
         }
 
-
-        private async Task SendMessage(string gameID, string message, object data) //sends messages to both players from one game
+        //sends a message to both players from a game(gameID)
+        private async Task SendMessage(string gameID, string message, object data) 
         {
             string Player1ConnectionID = connection.PlayerIDToConnectionID[logic.GetGameFromID(gameID).Player1.PlayerID];
             await Clients.Client(Player1ConnectionID).SendAsync(message, data);
