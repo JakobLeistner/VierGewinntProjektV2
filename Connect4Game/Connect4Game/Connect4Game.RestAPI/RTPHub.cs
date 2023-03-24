@@ -11,10 +11,14 @@ namespace Connect4Game.RestAPI
 {
     public class RTPHub : Hub
     {
-        private ConnectionService connection;
-        private LogicController logic;
+        private readonly ConnectionService connection;
+        private readonly LogicController logic;
 
-        public RTPHub(){}
+        public RTPHub()
+        {
+            connection = new ConnectionService();
+            logic = new LogicController();
+        }
         //Hub wartet und hört auf events
 
         //gameID kommt aus Logik, denn dort wurde das event invoked 
@@ -31,9 +35,9 @@ namespace Connect4Game.RestAPI
         }
 
         [HubMethodName("OnMoveMade")]
-        public async Task OnMoveMade(string gameID, Player Mover)
+        public async Task OnMoveMade(string gameID)
         {
-            await SendMessage(gameID, "MoveMade", Mover);
+            await SendMessage(gameID, "MoveMade", null);
         }
 
         [HubMethodName("OnQueueChanged")]
